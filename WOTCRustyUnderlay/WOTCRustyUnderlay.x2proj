@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>91e305b2-7419-4ab7-8028-ea403c8920b4</Guid>
+    <Name>WOTCRustyUnderlay</Name>
+    <Description>This mod allows you to tweak/edit what the Reinforced Underlay 'breakthrough' tech unlocks after completion of the Purifier Autopsy.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WOTCRustyUnderlay</AssemblyName>
+    <RootNamespace>WOTCRustyUnderlay</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\WOTCRustyUnderlay\" />
+    <Folder Include="Src\WOTCRustyUnderlay\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComRustyUnderlay.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\WOTCRustyUnderlay\Classes\X2Ability_RustyUnderlayPassive.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WOTCRustyUnderlay\Classes\X2DownloadableContentInfo_WOTCRustyUnderlay.uc" />
+    <Content Include="Src\WOTCRustyUnderlay\Classes\X2StrategyElement_RustyUnderlay.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
